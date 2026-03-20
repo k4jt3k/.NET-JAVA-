@@ -1,10 +1,9 @@
  # Platfromy programistyczne .NET i Java
------------------
- 
+
+
 ## Lab0 
 Program Fizzbuzz 
  
- ----------------
 
 ## Lab1 
 ### Zadanie 1: Algorytm rozwiązujący problem plecakowy
@@ -17,8 +16,7 @@ Program Fizzbuzz
   Zaprojektowno interfejs graficzny do obsługi algorytmu z pierwszego zadania. Dodano pole tekstowe do wprowadzania wartości oraz przycisk do uruchomienia algorytmu. Zasotosowano również walidację danych czyli podświetlenie okna na czerwono w przypadku wprowadzenia nieodpowiednich danych. 
 
 ### Poprawki w domu: 
-*naprawienei jednego testu jednostkowego by algorytm przechodził poprawnie wszytskie testy
-*dodanie walidacji w interfejsie graficznym
- 
------------------
+* naprawienie jednego testu jednostkowego by algorytm przechodził poprawnie wszytskie testy
+* dodanie walidacji w interfejsie graficznym
+
  
