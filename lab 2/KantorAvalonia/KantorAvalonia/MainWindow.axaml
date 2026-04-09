@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:KantorAvalonia"
+        x:Class="KantorAvalonia.MainWindow"
+        x:DataType="local:MainWindow"
+        Title="Kantor" Width="400" Height="500">
+    
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="Data (RRRR-MM-DD):" />
+        <TextBox Name="DateEntry" Text="2024-01-01" />
+        
+        <TextBlock Text="Waluta:" />
+        <TextBox Name="CurrencyEntry" Text="PLN" />
+        
+        <Button Content="Pobierz" Click="OnGetRateClicked" HorizontalAlignment="Stretch" />
+        
+        <ListBox Name="RatesListBox" ItemsSource="{Binding History}" Height="250">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="local:CurrencyRate">
+                    <StackPanel Orientation="Horizontal" Spacing="15">
+                        <TextBlock Text="{Binding Date}" Width="90"/>
+                        <TextBlock Text="{Binding Symbol}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Rate}" Foreground="Green"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>
