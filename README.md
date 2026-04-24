@@ -29,4 +29,17 @@ Program Fizzbuzz
 
 ### Zadanie 3: GUI
  Stworzono interfejs graficzny za pomocą Avalonia. Interfejs pozwala na graficzne wpisanie wartości daty oraz symbolu waluty, następnie baza danych pobranych wartości jest wyświetlana. Zastosowano automatyczne odświeżanie. 
- 
+
+
+ ## Lab3
+ ### Zadanie 1: Wysokopoziomowe zrównoleglenie obliczeń (Parallel)
+  W ramach zadania zaimplementowano model macierzy aor algorytm mnożący ją z wykorzystaniem bilbioteki Parallel. Program uśrednia wynik z 3 pomiarów oraz wyświetla wynik w milisekundach. Badania przeprowadzono na różnych rozmiarach macierzy oraz na róznej ilości wątków (również większych niż fizyczne). Pomiary wykazały, że podział zadańna wiele wątków redukuje czas obliczeń dla dużych zbiorów. 
+
+  ### Zadanie 2: Niskopoziomoe zarządzanie wątkami (Thread)
+  Zadanie 2 to rozszerzona wersja zadania 1 o algorytm mnożenia wykorzystujący klasę Thread. Praca dzielona jest na wiersze przypisywane do konkretnych obiektów, metoda Join() sygnalizuje zakończenie oraz synchronizację. Porównując wyniki lepiej poradziła sobie bilbioteka Parallel udowadniając wydajność dzięki korzystaniu z systemowej puli wątków. 
+
+<img width="1009" height="696" alt="image" src="https://github.com/user-attachments/assets/527745bf-5dfe-436f-a036-1e59f500c0ef" />
+
+
+  ### Zadanie 3: Wielowątkowe przetwarzanie obrazów w GUI
+   Zaprojektowano apliakcję graficzną Windows Forms, w której zaimolenetowano cztery różne filtry przetwarzające piksele obrazu(odcienie szarości, negatyw, progowanie,własny filtr). Za pomocą obiektu Bitmap nałożono wszystkie filtry jednocześnie. Task.RUn pomógł oddzielić cieżkie obliczenia od głównego wątku aplikacji. 
