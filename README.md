@@ -43,3 +43,19 @@ Program Fizzbuzz
 
   ### Zadanie 3: Wielowątkowe przetwarzanie obrazów w GUI
    Zaprojektowano apliakcję graficzną Windows Forms, w której zaimolenetowano cztery różne filtry przetwarzające piksele obrazu(odcienie szarości, negatyw, progowanie,własny filtr). Za pomocą obiektu Bitmap nałożono wszystkie filtry jednocześnie. Task.RUn pomógł oddzielić cieżkie obliczenia od głównego wątku aplikacji. 
+
+
+ ## Lab4
+ ### Zadanie 1: Podstawy Blazor App
+  W tym zadaniu utworzono i skonfigurowano Blazor Web App. Zmodyfikowano zakłądkę pogoda dodając filtry oraz ilość wyświetlanych danych. 
+
+### Zadanie 2: ML.NET
+ Wykorzystując narzędzie ML.NET Model Builder wytrenowano model do analizy nastroju. Dodano odpowiedni formularz, który określa nastrój jako:pozytywny/negatywny/neutralny. Model wytrenowano na małej ilości danych ze względu na problemy techniczne przy większych ilościach danych. 
+
+### Zadanie 3: Baza danych i logowanie 
+ WYkorzystując Entity Framework Core utworzono:
+  - System autoryzacji - rejestracja i logowanie użytkowników
+  - operacje CRUD - modliwosc dodania, pogladu, edycji i usuwanie rekordów (filmów)
+  - Technika oceniania - automatyczne wyliczanie średnich ocen na bazie nowo dodanych danych
+  - Wyświetlanie obrazów plakatów filmowych
+  - Zakotwiczony komponent webowy - fragment mapy Google 
