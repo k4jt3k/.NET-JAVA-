@@ -1,0 +1,48 @@
+﻿@page "/sentiment"
+@rendermode InteractiveServer
+@using Microsoft.Extensions.ML
+
+@inject PredictionEnginePool<SentimentModel.ModelInput, SentimentModel.ModelOutput> PredictionPool
+
+<PageTitle>Analiza Nastroju</PageTitle>
+
+<div class="container text-center mt-5">
+    <h1>Jak się dzisiaj czujesz?</h1>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <textarea class="form-control mb-3" @bind="userInput" rows="3" placeholder="Wpisz nastrój "></textarea>
+            
+            <button class="btn btn-primary w-100" @onclick="AnalyzeSentiment">Analizuj mój nastrój</button>
+        </div>
+    </div>
+
+    @if (prediction != null)
+    {
+        var alertClass = prediction.PredictedLabel.ToLower() == "positive" ? "alert-success" :
+                         (prediction.PredictedLabel.ToLower() == "negative" ? "alert-danger" : "alert-warning");
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="alert @alertClass">
+                    <h4>Twój nastrój to: <strong>@prediction.PredictedLabel</strong></h4>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string userInput = "";
+    private SentimentModel.ModelOutput? prediction;
+
+    private void AnalyzeSentiment()
+    {
+        if (!string.IsNullOrWhiteSpace(userInput))
+        {
+
+            var input = new SentimentModel.ModelInput { Text = userInput };
+            prediction = PredictionPool.Predict(input);
+        }
+    }
+}

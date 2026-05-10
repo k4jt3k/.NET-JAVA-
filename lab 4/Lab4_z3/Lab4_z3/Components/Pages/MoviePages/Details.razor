@@ -1,0 +1,100 @@
+﻿@page "/movies/details"
+@using Microsoft.EntityFrameworkCore
+@using Lab4_z3.Models
+@inject IDbContextFactory<Lab4_z3.Data.ApplicationDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Details</PageTitle>
+
+<h1>Details</h1>
+
+<div>
+    <h2>Movie</h2>
+    <hr />
+    @if (movie is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <dl class="row">
+            <dt class="col-sm-2">Title</dt>
+            <dd class="col-sm-10">@movie.Title</dd>
+            <dt class="col-sm-2">Description</dt>
+            <dd class="col-sm-10">@movie.Description</dd>
+            <dt class="col-sm-2">ReleaseDate</dt>
+            <dd class="col-sm-10">@movie.ReleaseDate</dd>
+            <dt class="col-sm-2">Rate</dt>
+            <dd class="col-sm-10">@movie.Rate</dd>
+            <dt class="col-sm-2">RatingsCount</dt>
+            <dd class="col-sm-10">@movie.RatingsCount</dd>
+            <dt class="col-sm-2">ImageUrl</dt>
+            <dt class="col-sm-2">Plakat</dt>
+            <dd class="col-sm-10">
+                @if (!string.IsNullOrEmpty(movie.ImageUrl))
+                {
+                    <img src="@movie.ImageUrl" alt="Plakat filmu" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+                }
+                else
+                {
+                    <span>Brak obrazka</span>
+                }
+            </dd>
+
+            <dt class="col-sm-2">Średnia ocena</dt>
+            <dd class="col-sm-10">
+                <strong>@(movie.Rate?.ToString("0.00") ?? "Brak ocen")</strong>
+                <span class="text-muted">(Głosów: @movie.RatingsCount)</span>
+            </dd>
+        </dl>
+
+        <hr />
+        <h4>Oceń ten film:</h4>
+        <div class="d-flex align-items-center mb-4">
+            <input type="number" min="1" max="10" @bind="userRating" class="form-control w-25 me-2" placeholder="1-10" />
+            <button class="btn btn-success" @onclick="SubmitRating">Wystaw ocenę</button>
+        </div>
+
+
+        <div>
+            <a href="@($"/movies/edit?id={movie.Id}")">Edit</a> |
+            <a href="@($"/movies")">Back to List</a>
+        </div>
+    }
+</div>
+
+@code {
+    private Lab4_z3.Models.Movie? movie;
+    private int userRating = 5; 
+
+    [SupplyParameterFromQuery]
+    private int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        movie = await context.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+    }
+
+    private async Task SubmitRating()
+    {
+        if (movie != null && userRating >= 1 && userRating <= 10)
+        {
+            using var context = DbFactory.CreateDbContext();
+            var movieToUpdate = await context.Movie.FirstOrDefaultAsync(m => m.Id == Id);
+
+            if (movieToUpdate != null)
+            {
+                float currentAverage = movieToUpdate.Rate ?? 0;
+                int currentVotes = movieToUpdate.RatingsCount;
+
+                float totalScore = (currentAverage * currentVotes) + userRating;
+                movieToUpdate.RatingsCount++; 
+                movieToUpdate.Rate = totalScore / movieToUpdate.RatingsCount; 
+
+                await context.SaveChangesAsync();
+
+                movie = movieToUpdate;
+            }
+        }
+    }
+}
