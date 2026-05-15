@@ -1,6 +1,5 @@
  # Platfromy programistyczne .NET i Java
 
-
 ## Lab0 
 Program Fizzbuzz 
  
@@ -58,4 +57,14 @@ Program Fizzbuzz
   - operacje CRUD - modliwosc dodania, pogladu, edycji i usuwanie rekordów (filmów)
   - Technika oceniania - automatyczne wyliczanie średnich ocen na bazie nowo dodanych danych
   - Wyświetlanie obrazów plakatów filmowych
-  - Zakotwiczony komponent webowy - fragment mapy Google 
+  - Zakotwiczony komponent webowy - fragment mapy Google
+
+ ## Lab5
+ ### Zadanie 1: Problem plecakowy
+ Przy użyciu języka JAVA zaimplementowano klase Problem. Generuje ona liczby pseudolosowe z okreslonym ziarnem i tworzy liste przdedmiotów z dana wagą i wartościa.
+
+ ### Zadanie 2: Metoda Solve
+ Dodano metode Solve, któa realizuje algorytm zachłanny. Polega on na sortowaniu malejąca według stosunku wartości do wagi. Algorytm wybiera najbardziej opłacalne przedmioty do plecaka aż do zapełnienia pojemności plecaka. 
+
+ ### Zadanie 3: Testy jednostkowe
+ Za pomoca biblioteki JUnit5 napisano cztery testy jednostkowe. Weryfikują one poprawność sytuacji: braku miejsca w plecaku, poprawnosci zakresu losowanych danych oraz koncowych wynikow. 
