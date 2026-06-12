@@ -1,0 +1,32 @@
+enum BookCategory { FICTION, SCIENCE, HISTORY }
+
+entity Author {
+  name String required,
+  birthDate Date
+}
+
+entity Book {
+  title String required,
+  price Float,
+  category BookCategory
+}
+
+entity Library {
+  name String required
+}
+
+// Relacje
+relationship OneToMany {
+  Author{book} to Book{author}
+}
+
+relationship ManyToMany {
+  Book{library} to Library{book}
+}
+
+relationship OneToOne {
+  Library{author} to Author
+}
+
+// Wymagana paginacja
+paginate * with pagination

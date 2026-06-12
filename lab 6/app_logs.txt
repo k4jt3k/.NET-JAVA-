@@ -1,0 +1,100 @@
+maj 20, 2026 10:48:13 AM org.example.lab6.HelloApplication setupLogger
+INFO: --- URUCHOMIENIE APLIKACJI ---
+maj 20, 2026 10:48:23 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 20, 2026 10:48:25 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 20, 2026 10:48:27 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 20, 2026 10:48:33 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 20, 2026 10:48:40 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Progowanie zostało przeprowadzone pomyślnie!
+maj 20, 2026 10:48:43 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Negatyw został wygenerowany pomyślnie!
+maj 20, 2026 10:48:53 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz został przeskalowany pomyślnie!
+maj 20, 2026 10:49:02 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Zapisano obraz w pliku abc.jpg
+maj 20, 2026 10:53:34 AM org.example.lab6.HelloApplication stop
+INFO: --- ZAMKNIĘCIE APLIKACJI ---
+maj 20, 2026 10:55:18 AM org.example.lab6.HelloApplication setupLogger
+INFO: --- URUCHOMIENIE APLIKACJI ---
+maj 20, 2026 10:55:24 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 20, 2026 10:55:38 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 20, 2026 10:55:54 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz został przeskalowany pomyślnie!
+maj 20, 2026 10:55:59 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Negatyw został wygenerowany pomyślnie!
+maj 20, 2026 10:56:04 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Progowanie zostało przeprowadzone pomyślnie!
+maj 20, 2026 10:56:07 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 20, 2026 10:56:10 AM org.example.lab6.HelloApplication stop
+INFO: --- ZAMKNIĘCIE APLIKACJI ---
+maj 20, 2026 11:06:33 AM org.example.lab6.HelloApplication setupLogger
+INFO: --- URUCHOMIENIE APLIKACJI ---
+maj 20, 2026 11:06:45 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 20, 2026 11:06:55 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Negatyw został wygenerowany pomyślnie!
+maj 20, 2026 11:06:58 AM org.example.lab6.HelloApplication stop
+INFO: --- ZAMKNIĘCIE APLIKACJI ---
+maj 29, 2026 7:35:23 AM org.example.lab6.HelloApplication setupLogger
+INFO: URUCHOMIENIE APLIKACJI
+maj 29, 2026 7:35:37 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 29, 2026 7:36:15 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 29, 2026 7:36:18 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 29, 2026 7:36:31 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz został przeskalowany pomyślnie!
+maj 29, 2026 7:36:36 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Przywrócono oryginalny obraz
+maj 29, 2026 7:36:42 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Negatyw został wygenerowany pomyślnie!
+maj 29, 2026 7:36:50 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Progowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:36:54 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:37:01 AM org.example.lab6.HelloApplication stop
+INFO: ZAMKNIĘCIE APLIKACJI
+maj 29, 2026 7:37:04 AM org.example.lab6.HelloApplication setupLogger
+INFO: URUCHOMIENIE APLIKACJI
+maj 29, 2026 7:40:50 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 29, 2026 7:40:56 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:41:12 AM org.example.lab6.HelloApplication stop
+INFO: ZAMKNIĘCIE APLIKACJI
+maj 29, 2026 7:41:27 AM org.example.lab6.HelloApplication setupLogger
+INFO: URUCHOMIENIE APLIKACJI
+maj 29, 2026 7:42:14 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 29, 2026 7:42:17 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 29, 2026 7:42:19 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz obrócony pomyślnie!
+maj 29, 2026 7:42:41 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Obraz został przeskalowany pomyślnie!
+maj 29, 2026 7:42:56 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Negatyw został wygenerowany pomyślnie!
+maj 29, 2026 7:43:10 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Progowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:43:20 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:43:24 AM org.example.lab6.HelloApplication stop
+INFO: ZAMKNIĘCIE APLIKACJI
+maj 29, 2026 7:43:27 AM org.example.lab6.HelloApplication setupLogger
+INFO: URUCHOMIENIE APLIKACJI
+maj 29, 2026 7:43:33 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Pomyślnie załadowano plik
+maj 29, 2026 7:43:39 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Konturowanie zostało przeprowadzone pomyślnie!
+maj 29, 2026 7:43:51 AM org.example.lab6.HelloApplication showToast
+SEVERE: BŁĄD: Plik abc.jpg już istnieje w systemie. Podaj inną nazwę pliku!
+maj 29, 2026 7:43:57 AM org.example.lab6.HelloApplication showToast
+INFO: AKCJA: Zapisano obraz w pliku abd.jpg
