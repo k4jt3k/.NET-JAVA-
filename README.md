@@ -68,3 +68,9 @@ Program Fizzbuzz
 
  ### Zadanie 3: Testy jednostkowe
  Za pomoca biblioteki JUnit5 napisano cztery testy jednostkowe. Weryfikują one poprawność sytuacji: braku miejsca w plecaku, poprawnosci zakresu losowanych danych oraz koncowych wynikow. 
+
+  ## Lab6
+  Celem laboratorium było utworzenie całego interfejsu użytkownika do przetwarzania obrazu. Aplikacja została utworzona z taki funkcjami jak np. obrot obrazu, skalowanie czy zapisywanie przerobionego zdjecia do pliku.
+
+  ## Lab7
+  Zapoznanie się z generatorem aplikacji bazodanowych JHipster. W ramach prac wykonano: generowanie aplikacji oraz modyfikacje struktury bazy. 
